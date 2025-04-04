@@ -10,7 +10,7 @@ import { ButtonBase } from "@mui/material";
 const BlogPostsPage = async () => {
   let blogs = [];
   try {
-    let response = await fetch("http://localhost:3000/api/blogs");
+    let response = await fetch("https://blog-post-wine-three.vercel.app/api/blogs");
     blogs = await response.json();
     console.log(response, "Response");
     blogs = blogs.blogs;

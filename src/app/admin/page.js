@@ -21,7 +21,7 @@ const Adminpage = () => {
     };
 
     try {
-      const post = await fetch("http://localhost:3000/api/blogs/add-blog", {
+      const post = await fetch("https://blog-post-wine-three.vercel.app/api/blogs/add-blog", {
         method: "POST",
         body: JSON.stringify(obj),
       });

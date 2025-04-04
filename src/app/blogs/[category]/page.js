@@ -10,7 +10,7 @@ const BlogCategoryPage = async ( {params}) => {
 let {category} = await params;
   let posts = [];
   try{
-    let response = await fetch(`http://localhost:3000/api/blogs/category/${category}`);
+    let response = await fetch(`https://blog-post-wine-three.vercel.app/api/blogs/category/${category}`);
     let body = await response.json();
     console.log(body, "Response JSON");
     posts = body.getcategory

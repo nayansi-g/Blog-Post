@@ -20,7 +20,7 @@ export default function Contact() {
     }
     console.log(obj)
     try {
-      const post = await fetch("http://localhost:3000/api/users/add-user", { method: "POST", body: JSON.stringify(obj) })
+      const post = await fetch("https://blog-post-wine-three.vercel.app/api/users/add-user", { method: "POST", body: JSON.stringify(obj) })
       console.log("Data Added")
       firstNameRef.current.value = "";
     lastNameRef.current.value = "";

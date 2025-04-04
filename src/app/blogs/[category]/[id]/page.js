@@ -28,7 +28,7 @@ const SingleBlog = async ({ params }) => {
   
   let blog = {};
   try {
-    let response = await fetch(`http://localhost:3000/api/blogs/${id}`);
+    let response = await fetch(`https://blog-post-wine-three.vercel.app/api/blogs/${id}`);
     blog = await response.json()
     blog = blog.getSingleBlog;
   } catch (err) {
